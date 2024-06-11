@@ -1,0 +1,41 @@
+.light {
+  background-color: #f7f7f7;
+  color: black;
+}
+
+.dark {
+  /* background-color: rgb(8, 15, 35); */
+  background-color: #222121;
+  color: whitesmoke;
+}
+
+.lightMode {
+  background-color: #f7f7f7;
+  color: black;
+}
+
+.darkMode {
+  /* background-color: rgb(8, 15, 35); */
+ /* background-color: #1d1a59; */
+ background-color: #222121;
+  color: whitesmoke;
+}
+
+/* Add any other global styles here */
+
+/* Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: inherit; /* Make it adapt to the theme */
+}
+
+.themeToggle {
+  background-color: transparent;
+  border: none;
+  color: inherit; /* Make it adapt to the theme */
+  cursor: pointer;
+  font-size: 16px;
+}

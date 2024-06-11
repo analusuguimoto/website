@@ -1,0 +1,140 @@
+.card {
+  flex: 1;
+  position: relative; /* Required for overlay positioning */
+  max-width: 500px; /* Increased max-width of the card */
+  margin: 20px; /* Adds spacing between cards */
+}
+
+.firstGroup, .secondGroup {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of cards to handle responsiveness */
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.projetos {
+  margin-top: 7%;
+  display: flex;
+  align-items: center;
+  color: #c76d6a;
+  justify-content: center;
+}
+
+.card img {
+  width: 100%; /* Ensures the image takes the full width of the card */
+  height: auto; /* Maintains aspect ratio */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  filter: brightness(50%);
+  transition: filter 0.3s ease; /* Adds smooth transition effect */
+  border-radius: 25px
+  /* margin-bottom: 10px; */
+}
+
+.card:hover img {
+  filter: brightness(110%); /* Increases brightness on hover */
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Further darkens the image */
+  text-align: center;
+  border-radius: 25px
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Adds space between the tags */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 90%; /* Ensures the tags container takes most of the card's width */
+}
+
+.card:hover .technologies {
+  opacity: 1;
+}
+
+.card h3 {
+  margin-top: 2px; /* Adjust the margin to move the title up */
+  margin-bottom: 60px; 
+}
+
+.back, .front, .languages, .github {
+  flex: 1 1 30%; /* Ensures each tag takes a consistent portion of the available space */
+  color: white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.back {
+  background-color: #c7c19d;
+  color: black;
+}
+
+.front {
+  background-color: #c76d6a;
+
+}
+
+.languages {
+  background-color: #F6CDC7;
+  color: black;
+}
+
+.github {
+  background-color: #70997a;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.light .projH2Title {
+color: #c76d6a;
+}
+
+.dark .projH2Title {
+  color: #f39f5a; /* Adjust as needed for dark mode */
+}
+
+.projH2Title {
+  color: #c76d6a;
+  /* padding: 20px; */
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.card {
+  /* Initial state for the cards */
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.card.active {
+  /* Final state for the cards when they become visible */
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card.move-to-left {
+  /* State when cards are not visible */
+  transform: translateX(-100%);
+}

@@ -1,0 +1,206 @@
+.myself {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px;
+  margin-left: 80px;
+}
+
+.myselfContent {
+  flex: 1;
+  text-align: left;
+}
+
+.title {
+  margin: 0;
+  color: #c76d6a;
+  font-size: 3em;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #515151;
+}
+
+.myselfImage {
+  margin-left: 10%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.myself img {
+  max-width: 70%;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.myself img:hover {
+  transform: scale(1.15);
+}
+
+.about {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.titleH2 {
+  color: #c76d6a;
+  /* padding: 20px; */
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.paragraph {
+  margin: 0 auto;
+  max-width: 70%;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.habilities { 
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+.icon {
+  color: #515151;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.habilities .js:hover {
+  color: #efc22f;
+}
+
+.habilities .java:hover {
+  color: red;
+}
+
+.habilities .node:hover {
+  color: rgb(148, 206, 60);
+}
+
+.habilities .py:hover {
+  color: #eadc46;
+}
+
+.habilities .docker:hover {
+  color: rgb(0, 132, 255);
+}
+
+.habilities .react:hover {
+  color: rgb(65, 207, 233);
+}
+
+.habilities .css:hover {
+  color: #012acc;
+}
+
+.habilities .html:hover {
+  color: orangered;
+}
+
+.habilities .gh:hover {
+  color: black;
+}
+
+.dark .title {
+  color: #f39f5a;
+}
+
+.dark .icon {
+  color: whitesmoke;
+}
+
+.light .title {
+  color: #c76d6a;
+}
+
+.light .icon {
+  color: #515151;
+}
+
+.dark #titleH2 {
+  color: #f39f5a;; /* Adjust as needed for dark mode */
+}
+
+.light #titleH2 {
+  color: #c76d6a; /* Original color */
+}
+
+.btn-rs {
+  cursor: pointer;
+  font-weight: 500;
+  color: #191818;
+  background-image: linear-gradient(90deg, #e89897 .2%, #ffb284 100%);
+  border-radius: 25px;
+  border: none;
+  padding: 10px 20px; /* Adjusted for better padding */
+  text-decoration: none;
+  margin: 5px; /* Adjusted for better spacing */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-rs:hover {
+  color: #191818; /* Change text color on hover */
+  background-image: linear-gradient(90deg, #ffb284 .2%, #ffb284 100%);
+  transform: scale(0.90);
+}
+
+.light .btn-mail {
+  cursor: pointer;
+  font-weight: 500;
+  color: #191818;
+  padding: 10px 20px; /* Adjusted for better padding */
+  text-decoration: none;
+  margin: 5px; /* Adjusted for better spacing */
+  transition: color 0.3s ease;
+  border: double 3px transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #e89897 , #ffb284);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.dark .btn-mail {
+  cursor: pointer;
+  font-weight: 500;
+  color: whitesmoke;
+  padding: 10px 20px; /* Adjusted for better padding */
+  text-decoration: none;
+  margin: 5px; /* Adjusted for better spacing */
+  transition: color 0.3s ease;
+  border: double 3px transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#222221, #222221), radial-gradient(circle at top left, #e89897 , #ffb284);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.btn-mail:hover {
+  background-image: linear-gradient(90deg, #e89897 .2%, #e89897 100%);
+  color: #191818; 
+  transform: scale(0.90);
+}
+
+/* Initial state for the elements */
+.scroll-animation {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Final state for the elements when they are visible */
+.scroll-animation.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+

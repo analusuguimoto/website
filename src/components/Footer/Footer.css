@@ -1,0 +1,19 @@
+.footer {
+  background-color: #ffb284;
+  color: black;
+  display: flex;
+  align-items: center;  /* Center vertically */
+  justify-content: center;  /* Center horizontally */
+  height: 2em;
+  padding: 0 20px;
+}
+
+.dark .footer {
+  background-color: #ae445a; /* Dark mode background color */
+  color: #ecf0f1; /* Dark mode text color */
+}
+
+.light .footer {
+  background-color: #ffb284; /* Light mode background color */
+  color: black; /* Light mode text color */
+}
