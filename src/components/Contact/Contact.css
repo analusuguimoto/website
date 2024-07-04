@@ -1,0 +1,49 @@
+.titleH2Contatos {
+  color: #c76d6a;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  margin-top: 80px;
+}
+
+.contacts { 
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+  gap: 90px; /* Adds space between the icons */
+  margin: 40px;
+  margin-bottom: 80px;
+}
+
+.contactIcon {
+  color: #515151;
+  transition: transform 0.3s ease;
+}
+
+.contactIcon:hover {
+  transform: scale(1.2);
+}
+
+.dark .title {
+  color: #f39f5a;
+}
+
+.dark .contactIcon {
+  color: whitesmoke;
+}
+
+.light .title {
+  color: #c76d6a;
+}
+
+.light .contactIcon {
+  color: #d8a09e;
+}
+
+.dark #titleH2 {
+  color: #c76d6a; /* Adjust as needed for dark mode */
+}
+
+.light #titleH2 {
+  color: #c76d6a; /* Original color */
+}
+

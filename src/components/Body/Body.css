@@ -1,3 +1,15 @@
+@keyframes scaleDelayed {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .myself {
   display: flex;
   justify-content: space-between;
@@ -33,6 +45,7 @@
   max-width: 70%;
   height: auto;
   transition: transform 0.3s ease; 
+  animation: scaleDelayed 1s 6.5s;
 }
 
 .myself img:hover {
@@ -59,79 +72,24 @@
   text-align: center;
 }
 
-.habilities { 
-  display: flex;
-  justify-content: space-evenly;
-  margin: 30px;
-}
-
-.icon {
-  color: #515151;
-  transition: transform 0.3s ease;
-}
-
-.icon:hover {
-  transform: scale(1.2);
-}
-
-.habilities .js:hover {
-  color: #efc22f;
-}
-
-.habilities .java:hover {
-  color: red;
-}
-
-.habilities .node:hover {
-  color: rgb(148, 206, 60);
-}
-
-.habilities .py:hover {
-  color: #eadc46;
-}
-
-.habilities .docker:hover {
-  color: rgb(0, 132, 255);
-}
-
-.habilities .react:hover {
-  color: rgb(65, 207, 233);
-}
-
-.habilities .css:hover {
-  color: #012acc;
-}
-
-.habilities .html:hover {
-  color: orangered;
-}
-
-.habilities .gh:hover {
-  color: black;
-}
-
 .dark .title {
   color: #f39f5a;
-}
-
-.dark .icon {
-  color: whitesmoke;
 }
 
 .light .title {
   color: #c76d6a;
 }
 
-.light .icon {
-  color: #515151;
-}
-
 .dark #titleH2 {
-  color: #f39f5a;; /* Adjust as needed for dark mode */
+  color: #f39f5a;
 }
 
 .light #titleH2 {
-  color: #c76d6a; /* Original color */
+  color: #c76d6a; 
+}
+
+.dark .subtitle {
+  color: whitesmoke
 }
 
 .btn-rs {
@@ -141,29 +99,30 @@
   background-image: linear-gradient(90deg, #e89897 .2%, #ffb284 100%);
   border-radius: 25px;
   border: none;
-  padding: 10px 20px; /* Adjusted for better padding */
+  padding: 10px 20px; 
   text-decoration: none;
-  margin: 5px; /* Adjusted for better spacing */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  margin: 5px; 
+  transition: background-color 0.3s ease; 
 }
 
 .btn-rs:hover {
-  color: #191818; /* Change text color on hover */
+  color: #191818; 
   background-image: linear-gradient(90deg, #ffb284 .2%, #ffb284 100%);
   transform: scale(0.90);
+  text-decoration: none;
 }
 
 .light .btn-mail {
   cursor: pointer;
   font-weight: 500;
   color: #191818;
-  padding: 10px 20px; /* Adjusted for better padding */
+  padding: 10px 20px; 
   text-decoration: none;
-  margin: 5px; /* Adjusted for better spacing */
+  margin: 5px; 
   transition: color 0.3s ease;
   border: double 3px transparent;
   border-radius: 20px;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #e89897 , #ffb284);
+  background-image: linear-gradient(#f7f7f7, #f7f7f7), radial-gradient(circle at top left, #e89897 , #ffb284);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
@@ -172,9 +131,9 @@
   cursor: pointer;
   font-weight: 500;
   color: whitesmoke;
-  padding: 10px 20px; /* Adjusted for better padding */
+  padding: 10px 20px;
   text-decoration: none;
-  margin: 5px; /* Adjusted for better spacing */
+  margin: 5px; 
   transition: color 0.3s ease;
   border: double 3px transparent;
   border-radius: 20px;
@@ -189,18 +148,8 @@
   transform: scale(0.90);
 }
 
-/* Initial state for the elements */
-.scroll-animation {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+a {
+  text-decoration: none; 
+  color: inherit; 
 }
-
-/* Final state for the elements when they are visible */
-.scroll-animation.show {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-
 

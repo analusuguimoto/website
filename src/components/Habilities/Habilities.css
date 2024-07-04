@@ -1,4 +1,4 @@
-.titleH2 {
+.titleH2Habilities {
   color: #c76d6a;
   /* padding: 20px; */
   display: flex;
@@ -57,7 +57,7 @@
   color: black;
 }
 
-.dark .title {
+.dark h1 {
   color: #f39f5a;
 }
 
@@ -65,7 +65,7 @@
   color: whitesmoke;
 }
 
-.light .title {
+.light h1 {
   color: #c76d6a;
 }
 
@@ -73,10 +73,10 @@
   color: #515151;
 }
 
-.dark #titleH2 {
+.dark #titleH2Habilities {
   color: #f39f5a;; /* Adjust as needed for dark mode */
 }
 
-.light #titleH2 {
+.light #titleH2Habilities {
   color: #c76d6a; /* Original color */
 }

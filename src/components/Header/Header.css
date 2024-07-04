@@ -3,7 +3,7 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; /* Changed from space-around to space-between */
   height: 2em;
   border-bottom: 3px solid transparent;
   border-image: linear-gradient(to right, #c7c19d, #587c61) 1;
@@ -11,21 +11,15 @@
 }
 
 .header-title {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 24px;
+  margin-left: 46%;
 }
 
 .themeToggle {
-  /* background-color: transparent; */
+  background-color: transparent;
   border: none;
   color: inherit;
   cursor: pointer;
-  font-size: 16px;
-  position:right;
 }
 
 /* Dark mode specific styles */
@@ -40,4 +34,3 @@
   color: white; /* Light mode text color */
   border-image: linear-gradient(to right, #c7c19d, #587c61) 1;
 }
-

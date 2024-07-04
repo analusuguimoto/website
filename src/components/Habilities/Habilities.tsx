@@ -8,7 +8,7 @@ export default function Habilities({ isDarkMode }) {
   return (
     <>
       <div className={isDarkMode ? 'dark' : 'light'}>
-        <h1 className="titleH2">Principais habilidades</h1>
+        <h1 className="titleH2Habilities">Principais habilidades</h1>
         <div className="habilities">
           <FontAwesomeIcon icon={faJs} className="fa-5x icon js" />
           <FontAwesomeIcon icon={faJava} className="fa-5x icon java" />

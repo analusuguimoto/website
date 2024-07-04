@@ -1,41 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Body.css";
 import { ReactTyped } from "react-typed";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faReact, faJs, faHtml5, faGithub, faCss3, faDocker, faPython, faJava, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 
 export default function Body({ isDarkMode }) {
   const [showSecondLine, setShowSecondLine] = useState(false);
   const [showThirdLine, setShowThirdLine] = useState(false);
-
-  // useEffect(() => {
-  //   console.log("Component mounted");
-  //   const options = {
-  //     threshold: 0.1
-  //   };
-
-  //   const observer = new IntersectionObserver((entries, observer) => {
-  //     entries.forEach(entry => {
-  //       if (entry.isIntersecting) {
-  //         console.log("Element is intersecting:", entry.target);
-  //         entry.target.classList.add('show');
-  //         observer.unobserve(entry.target);
-  //       }
-  //     });
-  //   }, options);
-
-  //   const elements = document.querySelectorAll('.scroll-animation');
-  //   console.log("Elements to observe:", elements);
-  //   elements.forEach(element => {
-  //     observer.observe(element);
-  //   });
-
-  //   return () => {
-  //     elements.forEach(element => {
-  //       observer.unobserve(element);
-  //     });
-  //   };
-  // }, []);
 
   return (
     <>
@@ -44,7 +13,7 @@ export default function Body({ isDarkMode }) {
           <h1 className="title">
             <ReactTyped
               strings={["Olá, eu sou a"]}
-              typeSpeed={100}
+              typeSpeed={70}
               onComplete={() => setShowSecondLine(true)}
               showCursor={false}
             />
@@ -53,7 +22,7 @@ export default function Body({ isDarkMode }) {
             <h1 className="title">
               <ReactTyped
                 strings={["Ana Luiza Suguimoto :)"]}
-                typeSpeed={100}
+                typeSpeed={70}
                 startDelay={200}
                 showCursor={false}
                 onComplete={() => setShowThirdLine(true)}
@@ -64,15 +33,21 @@ export default function Body({ isDarkMode }) {
             <h3 className="subtitle">
               <ReactTyped
                 strings={["Desenvolvedora Back-end"]}
-                typeSpeed={100}
+                typeSpeed={80}
                 showCursor={false}
                 startDelay={300}
               />
             </h3>
           )}
-          <button className="btn-rs">Github</button>
-          <button className="btn-rs">LinkedIn</button>
-          <button className="btn-mail">Entre em contato</button>
+          <button className="btn-rs">
+            <a href="https://github.com/analusuguimoto/" target="_blank" rel="noopener noreferrer">Github</a>
+          </button>
+          <button className="btn-rs">
+            <a href="https://www.linkedin.com/in/ana-luiza-lourenco/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </button>
+          <button className="btn-mail">
+            <a href="mailto:analuizajl5@gmail.com">Entre em contato</a>
+          </button>
         </div>
         <div className="myselfImage">
           <img src="src/images/eu.svg" alt="Ana Luiza" />
@@ -87,20 +62,6 @@ export default function Body({ isDarkMode }) {
           Tenho graduação psicologia e estou em transição de carreira para Web Development. Também tenho experiência na área de RH (recrutamento) e vivência em startups.
         </p>
       </div>
-      {/* <div className={isDarkMode ? 'dark' : 'light'}>
-        <h1 className="titleH2 scroll-animation">Principais habilidades</h1>
-        <div className="habilities scroll-animation">
-          <FontAwesomeIcon icon={faJs} className="fa-5x icon js" />
-          <FontAwesomeIcon icon={faJava} className="fa-5x icon java" />
-          <FontAwesomeIcon icon={faNodeJs} className="fa-5x icon node" />
-          <FontAwesomeIcon icon={faPython} className="fa-5x icon py" />
-          <FontAwesomeIcon icon={faDocker} className="fa-5x icon docker" />
-          <FontAwesomeIcon icon={faReact} className="fa-5x icon react" />
-          <FontAwesomeIcon icon={faCss3} className="fa-5x icon css" />
-          <FontAwesomeIcon icon={faHtml5} className="fa-5x icon html" />
-          <FontAwesomeIcon icon={faGithub} className="fa-5x icon gh" />
-        </div>
-      </div> */}
     </>
   );
 }

@@ -37,6 +37,17 @@ export default function Projects({ isDarkMode }) {
       </div>
       <div className="firstGroup">
         <div className="card">
+            <img src="src/images/crops.png" alt="plantação" className="crops" />
+            <div className="overlay">
+              <h3>Sistema de Fazendas</h3>
+            </div>
+            <div className="technologies">
+              <span className="back">Back-end</span>
+              <span className="languages">Java</span>
+              <a href="https://github.com/analusuguimoto/farm-project" target="_blank" rel="noopener noreferrer" className="github">Veja no Github</a>
+            </div>
+        </div>
+        <div className="card">
           <img src="src/images/museu-crop.png" alt="museu" className="museumImage" />
           <div className="overlay">
             <h3>Localizador de museus</h3>
@@ -44,7 +55,7 @@ export default function Projects({ isDarkMode }) {
           <div className="technologies">
             <span className="back">Back-end</span>
             <span className="languages">Java</span>
-            <Link to="https://github.com/analusuguimoto/" className="github">Veja no Github</Link>
+            <a href="https://github.com/analusuguimoto/museum-finder" target="_blank" rel="noopener noreferrer" className="github">Veja no Github</a>
           </div>
         </div>
         <div className="card">
@@ -55,18 +66,7 @@ export default function Projects({ isDarkMode }) {
           <div className="technologies">
             <span className="back">Back-end</span>
             <span className="languages">Python</span>
-            <Link to="https://github.com/analusuguimoto/" className="github">Veja no Github</Link>
-          </div>
-        </div>
-        <div className="card">
-          <img src="src/images/urna-crop.png" alt="urna" className="urna" />
-          <div className="overlay">
-            <h3>Sistema de votação</h3>
-          </div>
-          <div className="technologies">
-            <span className="back">Back-end</span>
-            <span className="languages">Java</span>
-            <Link to="https://github.com/analusuguimoto/" className="github">Veja no Github</Link>
+            <a href="https://github.com/analusuguimoto/restaurant-orders" target="_blank" rel="noopener noreferrer" className="github">Veja no Github</a>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@ export default function Projects({ isDarkMode }) {
           <div className="technologies">
             <span className="back">Back-end</span>
             <span className="languages">Node.js</span>
-            <Link to="https://github.com/analusuguimoto/" className="github">Veja no Github</Link>
+            <a href="https://github.com/analusuguimoto/futebol-clube" target="_blank" rel="noopener noreferrer" className="github">Veja no Github</a>
           </div>
         </div>
         <div className="card">
@@ -90,7 +90,7 @@ export default function Projects({ isDarkMode }) {
           <div className="technologies">
             <span className="back">Back-end</span>
             <span className="languages">Node.js</span>
-            <Link to="https://github.com/analusuguimoto/" className="github">Veja no Github</Link>
+            <a href="https://github.com/analusuguimoto/blogs-api" target="_blank" rel="noopener noreferrer" className="github">Veja no Github</a>
           </div>
         </div>
         <div className="card">
@@ -101,7 +101,7 @@ export default function Projects({ isDarkMode }) {
           <div className="technologies">
             <span className="front">Front-end</span>
             <span className="languages">React.js</span>
-            <Link to="https://github.com/analusuguimoto/" className="github">Veja no Github</Link>
+            <a href="https://github.com/analusuguimoto/recipes-app" target="_blank" rel="noopener noreferrer" className="github">Veja no Github</a>
           </div>
         </div>
       </div>

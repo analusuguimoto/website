@@ -4,6 +4,7 @@ import Body from "../Body/Body";
 import Projects from '../Projects/Projects';
 import Footer from '../Footer/Footer.tsx';
 import Habilities from '../Habilities/Habilities.tsx';
+import Contact from '../Contact/Contact.tsx';
 import './MainPage.css';
 
 const MainPage = () => {
@@ -19,10 +20,11 @@ const MainPage = () => {
 
   return (
     <div className={isDarkMode ? 'dark' : 'light'}>
-      <Header toggleTheme={toggleTheme} />
+      <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Body isDarkMode={isDarkMode} />
       <Habilities isDarkMode={isDarkMode} />
       <Projects isDarkMode={isDarkMode} />
+      <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
     </div>
   );

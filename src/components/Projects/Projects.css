@@ -28,7 +28,7 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   filter: brightness(50%);
   transition: filter 0.3s ease; /* Adds smooth transition effect */
-  border-radius: 25px
+  border-radius: 45px
   /* margin-bottom: 10px; */
 }
 
@@ -48,7 +48,7 @@
   color: white;
   background: rgba(0, 0, 0, 0.5); /* Further darkens the image */
   text-align: center;
-  border-radius: 25px
+  border-radius: 45px
 }
 
 .technologies {
@@ -78,7 +78,7 @@
 .back, .front, .languages, .github {
   flex: 1 1 30%; /* Ensures each tag takes a consistent portion of the available space */
   color: white;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 5px 10px;
   text-align: center;
   display: inline-block;
