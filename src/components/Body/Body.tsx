@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Body.css";
 import { ReactTyped } from "react-typed";
+import imgMe from "../../../public/myself-png.png";
 
 export default function Body({ isDarkMode }) {
   const [showSecondLine, setShowSecondLine] = useState(false);
@@ -50,7 +51,7 @@ export default function Body({ isDarkMode }) {
           </button>
         </div>
         <div className="myselfImage">
-          <img src="src/images/eu.svg" alt="Ana Luiza" />
+          <img src={imgMe} alt="Ana Luiza" />
         </div>
       </div>
       <div className={`about ${isDarkMode ? 'dark' : 'light'}`}>

@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import blogs from "../../../public/blogs.png";
+import crops from "../../../public/crops.png";
+import museu from "../../../public/museu-crop.png";
+import recipes from "../../../public/recipes-app.png";
+import restaurant from "../../../public/restaurant-crop.png";
+import tfc from "../../../public/tfc.png";
 import "./Projects.css";
 
 export default function Projects({ isDarkMode }) {
@@ -37,7 +42,7 @@ export default function Projects({ isDarkMode }) {
       </div>
       <div className="firstGroup">
         <div className="card">
-            <img src="src/images/crops.png" alt="plantação" className="crops" />
+            <img src={crops} alt="plantação" className="crops" />
             <div className="overlay">
               <h3>Sistema de Fazendas</h3>
             </div>
@@ -48,7 +53,7 @@ export default function Projects({ isDarkMode }) {
             </div>
         </div>
         <div className="card">
-          <img src="src/images/museu-crop.png" alt="museu" className="museumImage" />
+          <img src={museu} alt="museu" className="museumImage" />
           <div className="overlay">
             <h3>Localizador de museus</h3>
           </div>
@@ -59,7 +64,7 @@ export default function Projects({ isDarkMode }) {
           </div>
         </div>
         <div className="card">
-          <img src="src/images/restaurant-crop.png" alt="menu" className="restaurant" />
+          <img src={restaurant} alt="menu" className="restaurant" />
           <div className="overlay">
             <h3>Restaurant Orders</h3>
           </div>
@@ -72,7 +77,7 @@ export default function Projects({ isDarkMode }) {
       </div>
       <div className="secondGroup">
         <div className="card">
-          <img src="src/images/tfc.png" alt="Tabela classificação futebol clube" className="futebol" />
+          <img src={tfc} alt="Tabela classificação futebol clube" className="futebol" />
           <div className="overlay">
             <h3>Futebol clube</h3>
           </div>
@@ -83,7 +88,7 @@ export default function Projects({ isDarkMode }) {
           </div>
         </div>
         <div className="card">
-          <img src="src/images/blogs.png" alt="Blogs API" className="blogs" />
+          <img src={blogs} alt="Blogs API" className="blogs" />
           <div className="overlay">
             <h3>Blogs API</h3>
           </div>
@@ -94,7 +99,7 @@ export default function Projects({ isDarkMode }) {
           </div>
         </div>
         <div className="card">
-          <img src="src/images/recipes-app.png" alt="Recipes App" className="recipes" />
+          <img src={recipes} alt="Recipes App" className="recipes" />
           <div className="overlay">
             <h3>Recipes App</h3>
           </div>
