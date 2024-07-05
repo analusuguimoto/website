@@ -7,7 +7,7 @@ import MainPage from "./components/MainPage/MainPage";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={ <MainPage /> } />
+      <Route path="/website" element={ <MainPage /> } />
     </Routes>  
   )
 }
