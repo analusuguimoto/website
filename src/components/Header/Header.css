@@ -1,36 +1,46 @@
 .header {
-  background-color: #70997a;
-  color: white;
+  /* background-color: #70997a; */
+  background-color: #f7f7f7;
+  color: #f7f7f7;
   display: flex;
   align-items: center;
   justify-content: space-around; /* Changed from space-around to space-between */
   height: 2em;
   border-bottom: 3px solid transparent;
-  border-image: linear-gradient(to right, #c7c19d, #587c61) 1;
+  /* border-image: linear-gradient(to right, #c7c19d, #587c61) 1; */
   padding: 0 20px;
 }
 
 .header-title {
-  font-size: 24px;
-  margin-left: 46%;
+  font-size: 30px;
+  margin-left: 44%;
+  font-family: "Roboto Condensed", sans-serif; /* Adicione a fonte desejada */
+  font-weight: 700;
 }
 
-.themeToggle {
-  background-color: transparent;
+.light .themeToggle {
+  /* background-color: transparent; */
   border: none;
-  color: inherit;
+  color: #c76d6a;
+  cursor: pointer;
+}
+
+.dark .themeToggle {
+  /* background-color: transparent; */
+  border: none;
+  color: #f39f5a;
   cursor: pointer;
 }
 
 /* Dark mode specific styles */
 .dark .header {
-  background-color: #662549; /* Dark mode background color */
-  color: #ecf0f1; /* Dark mode text color */
-  border-image: linear-gradient(to right, #ae445a, #451952) 1;
+  /* background-color: #662549; Dark mode background color */
+  color: #222121; /* Dark mode text color */
+  /* border-image: linear-gradient(to right, #ae445a, #451952) 1; */
 }
 
 .light .header {
-  background-color: #70997a; /* Light mode background color */
-  color: white; /* Light mode text color */
-  border-image: linear-gradient(to right, #c7c19d, #587c61) 1;
+  /* background-color: #70997a; Light mode background color */
+  color: #f7f7f7; /* Light mode text color */
+  /* border-image: linear-gradient(to right, #c7c19d, #587c61) 1; */
 }

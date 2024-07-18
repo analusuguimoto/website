@@ -30,3 +30,20 @@ code {
   --white: #fff;
   --black: #1a1b1c;
 }
+
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.roboto-condensed-light {
+  font-weight: 300;
+}
+
+.roboto-condensed-regular {
+  font-weight: 400;
+}
+
+.roboto-condensed-bold {
+  font-weight: 700;
+}

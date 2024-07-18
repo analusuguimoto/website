@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import blogs from "../../../public/blogs.png";
-import crops from "../../../public/crops.png";
-import museu from "../../../public/museu-crop.png";
-import recipes from "../../../public/recipes-app.png";
-import restaurant from "../../../public/restaurant-crop.png";
-import tfc from "../../../public/tfc.png";
+import blogs from "/blogs.png";
+import crops from "/crops.png";
+import museu from "/museu-crop.png";
+import recipes from "/recipes-app.png";
+import restaurant from "/restaurant-crop.png";
+import tfc from "/tfc.png";
 import "./Projects.css";
 
 export default function Projects({ isDarkMode }) {

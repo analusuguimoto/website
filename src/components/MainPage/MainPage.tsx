@@ -25,7 +25,7 @@ const MainPage = () => {
       <Habilities isDarkMode={isDarkMode} />
       <Projects isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode} />
+      
     </div>
   );
 };

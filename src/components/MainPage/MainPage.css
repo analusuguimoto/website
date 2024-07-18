@@ -21,21 +21,18 @@
   color: whitesmoke;
 }
 
-/* Add any other global styles here */
-
-/* Header.module.css */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: inherit; /* Make it adapt to the theme */
+  /* background-color: inherit;  */
 }
 
 .themeToggle {
   background-color: transparent;
   border: none;
-  color: inherit; /* Make it adapt to the theme */
+  /* color: inherit; */
   cursor: pointer;
   font-size: 16px;
 }
